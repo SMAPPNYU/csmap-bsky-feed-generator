@@ -2,7 +2,10 @@ import { QueryParams } from '../lexicon/types/app/bsky/feed/getFeedSkeleton'
 import { AppContext } from '../config'
 
 // max 15 chars
-export const shortname = 'whats-alf'
+//
+// NOTE: this is where filtering happens (i.e. sorting, shuffling, etc)
+// currently, we just read all of the messages in srec/subscription.ts 
+export const shortname = 'bridging-feed'
 
 export const handler = async (ctx: AppContext, params: QueryParams) => {
   let builder = ctx.db
