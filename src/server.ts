@@ -10,6 +10,16 @@ import { FirehoseSubscription } from './subscription'
 import { AppContext, Config } from './config'
 import wellKnown from './well-known'
 
+//hardcoded accounts for testing
+const ACCOUNTS = [
+  'mjecsmap.bsky.social',
+  'tiagoventura.bsky.social',
+  'cbarrie.bsky.social',
+  'jatucker.bsky.social',
+  'benguinaudeau.bsky.social',
+  'solmg.bsky.social',
+]
+
 export class FeedGenerator {
   public app: express.Application
   public server?: http.Server
